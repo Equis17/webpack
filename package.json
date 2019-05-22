@@ -1,0 +1,32 @@
+{
+  "name": "webpack-project",
+  "version": "1.0.0",
+  "description": "+ JS\r  - .js  .jsx  .coffee  .ts（TypeScript  类 C# 语言）\r + CSS\r  - .css  .less   .sass  .scss\r + Images\r  - .jpg   .png   .gif   .bmp   .svg\r + 字体文件（Fonts）\r  - .svg   .ttf   .eot   .woff   .woff2\r + 模板文件\r  - .ejs   .jade  .vue【这是在webpack中定义组件的方式，推荐这么用】",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "dev-server": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "less-loader": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "webpack-cli": "^3.3.2"
+  }
+}
