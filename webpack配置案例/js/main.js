@@ -8,6 +8,13 @@ import '../css/index.css'
 //在webpack.config.js中有个module对象下面的rules属性的test用于存放第三方插件的匹配规则,匹配规则从右到左执行第三方插件
 //webpack处理不了css中url地址>url-loader\file-loader  转换成base64 url-loader?limit=7000 文件大小最大限制 超过转成base64 name=[name].[ext]
 // 照片名称不会被改变 但是如果有相同的名字存只会显示第一张的 因为打包了的静态资源存放在了根目录 解决:name=[hash:8]-[name].[ext]
+//通过Babel可以将高级语法转化成低级的语法
+/*可以安装如下两套命令安装babel相关内容
+* 1.cnpm i babel-core babel-loader babel-plugin-transform-runtime -D
+* 2.cnpm i babel-preset-env babel-preset-stage-0 -D
+* 在webpack.config.js的module的rules数组中添加如下规则
+* {test:/\.js$/,use:babel-loader,exclude:/node_modules/}
+* */
 import '../css/test.less'
 import '../css/test2.scss'
 
