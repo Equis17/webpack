@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--不推荐直接在这里引用任何文件 因为二次请求-->
+    <!--在这直接引用main.js会报错 因为浏览器无法解析es6语法 需要打包-->
+    <!--全局打包命令更换为 webpack root -o root
+        在命令中黄色的警告是因为webpack4以上有开发模式和生产模式
+    -->
+    <script src="dist/bundle.js"></script>
+</head>
+<body>
+<ul>
+<li>这是第1个li</li>
+<li>这是第2个li</li>
+<li>这是第3个li</li>
+<li>这是第4个li</li>
+<li>这是第5个li</li>
+<li>这是第6个li</li>
+<li>这是第7个li</li>
+<li>这是第8个li</li>
+<li>这是第9个li</li>
+<li>这是第10个li</li>
+</ul>
+</body>
+</html>

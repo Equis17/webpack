@@ -54,7 +54,7 @@ webpack 是前端的一个项目构建工具，它是基于 Node.js 开发出来
 5. 直接在页面上引用`main.js`会报错，因为浏览器不认识`import`这种高级的JS语法，需要使用webpack进行处理，webpack默认会把这种高级的语法转换为低级的浏览器能识别的语法；
 6. 运行`webpack 入口文件路径 输出文件路径`对`main.js`进行处理：
 ```
-webpack src/js/main.js dist/bundle.js
+webpack src/js/main.js -o dist/bundle.js
 ```
 
 ## 使用webpack的配置文件简化打包时候的命令
